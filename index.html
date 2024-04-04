@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>JavaScript HTML Events</h1>
-<h2>The onclick Attribute</h2>
+<h1>Javascript</h1>
 
-<p>Click the button to display the date.</p>
-<button onclick="displayDate()">The time is?</button>
+<h2>The onmouseover Attributes</h2>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)"style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+    Mouse Over Me</div>
 
-<script>
-function displayDate() {
-  document.getElementById("demo").innerHTML = Date();
+    <script>
+function mOver(obj) {
+    obj.innerHTML = "Thank you"
 }
-</script>
 
-<p id="demo"></p>
+function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+}
 
-</body>
-</html> 
+    </script>
